@@ -1,0 +1,64 @@
+{
+  "configVersion": "v3",
+  "app": {
+    "appId": 1072513,
+    "appName": "Luv Diag",
+    "appType": "app",
+    "version": {
+      "code": 1,
+      "name": "0.1.0"
+    },
+    "icon": "icon.png",
+    "vender": "luvdiag",
+    "description": "Диагностика возможностей часов"
+  },
+  "permissions": [
+    "device:os.bg_service",
+    "device:os.local_storage"
+  ],
+  "runtime": {
+    "apiVersion": {
+      "compatible": "3.6",
+      "target": "3.6",
+      "minVersion": "3.6"
+    }
+  },
+  "targets": {
+    "default": {
+      "module": {
+        "page": {
+          "pages": [
+            "page/index",
+            "page/t_info",
+            "page/t_store",
+            "page/t_read",
+            "page/t_fs",
+            "page/t_svc"
+          ]
+        },
+        "app-service": {
+          "services": [
+            "app-service/svc_fs",
+            "app-service/svc_share"
+          ]
+        }
+      },
+      "platforms": [
+        {
+          "st": "s",
+          "sr": "w432"
+        }
+      ],
+      "designWidth": 432
+    }
+  },
+  "i18n": {
+    "en-US": {
+      "appName": "Luv Diag"
+    },
+    "ru-RU": {
+      "appName": "Luv Diag"
+    }
+  },
+  "defaultLanguage": "en-US"
+}

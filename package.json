@@ -1,0 +1,10 @@
+{
+  "name": "luv-diag",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Luv Diag для Amazfit (Zepp OS): проверяет, какие возможности часов работают (общая память, фоновая служба, файлы)",
+  "scripts": {
+    "build": "zeus build",
+    "test": "node tests/diag.test.mjs"
+  }
+}
